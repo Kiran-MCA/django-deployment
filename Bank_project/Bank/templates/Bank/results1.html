@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<h1>Branch Details</h1>
+{% if e %}
+    {% for a in e %}
+        <h2>Branch Name : {{a.bank_branch}}</h2>
+    {% endfor %}
+{% endif %}
+</body>
+</html>
